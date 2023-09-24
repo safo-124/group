@@ -20,7 +20,7 @@ const Navbar = async () => {
           <MainNav data={categories} />
           <NavbarActions />
         </div>
-        <MobileToggle />
+        
       </Container>
     </div>
   );
