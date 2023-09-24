@@ -4,6 +4,7 @@ import MainNav from "@/components/main-nav";
 import Container from "@/components/ui/container";
 import NavbarActions from "@/components/navbar-actions";
 import getCategories from "@/actions/get-categories";
+import { MobileSidebar } from "./mobile-toggle";
 
 const Navbar = async () => {
   const categories = await getCategories();
@@ -18,6 +19,7 @@ const Navbar = async () => {
           <MainNav data={categories} />
           <NavbarActions />
         </div>
+        <MobileSidebar/>
       </Container>
     </div>
   );
