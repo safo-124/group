@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils"
 import { Category } from "@/types";
+import { MobileToggle } from "./mobile-toggle";
 
 interface MainNavProps {
   data: Category[];
@@ -37,6 +38,7 @@ const MainNav: React.FC<MainNavProps> = ({
           {route.label}
       </Link>
       ))}
+     
     </nav>
   )
 };
